@@ -2,7 +2,7 @@ package com.bridgelabz;
 
 public class EmployeeWageComputation {
 	private static final int WAGE_PER_HOUR = 20;
-	protected void dailyWageCalculation() {
+	protected static void dailyWageCalculation() {
 		int isPresent = 1;
 		int value = (int)Math.floor(Math.random()*10) % 2;
 		if(value == isPresent) {
