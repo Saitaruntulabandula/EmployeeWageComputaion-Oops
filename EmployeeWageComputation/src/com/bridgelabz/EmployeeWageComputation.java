@@ -1,16 +1,14 @@
 package com.bridgelabz;
 
 public class EmployeeWageComputation {
-
-	public static void main(String[] args) {
-		System.out.println("****Welcome to Employee Wage Computation****");
-		attendanceInfo();
-	}
-	private static void attendanceInfo() {
+	private static final int WAGE_PER_HOUR = 20;
+	protected static void dailyWageCalculation() {
 		int isPresent = 1;
 		int value = (int)Math.floor(Math.random()*10) % 2;
 		if(value == isPresent) {
-			System.out.println("Employee is Present");
+			int empHrs = 8;
+			int empWage = WAGE_PER_HOUR*empHrs; 
+			System.out.println("Employee is Present and the Wage is : " +empWage);
 		}
 		else 
 			System.out.println("Employee is Absent");	
